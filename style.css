@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Protest Guerrilla;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 1.5rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+.nav_list ul{
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+#bar{
+    font-size: 1.5rem;
+    display: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.container div{
+    padding: 1em;
+    background-color: dodgerblue;
+    color: white;
+}
+
+@media(max-width: 768px){
+    #bar{
+        display: block;
+    }
+
+
+    .nav_list ul{
+        display: none;
+    }
+
+
+    h2{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 400px){
+    h2{
+        font-size: 1rem;
+    }
+}
